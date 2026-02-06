@@ -31,8 +31,8 @@ export function AboutSection({ coach }: AboutSectionType) {
                 </Text>
               ))}
             </div>
-            <div className="flex justify-center gap-4">
-              <Button variant="outline">
+            <div className="flex flex-col items-center md:flex-row md:justify-center gap-4">
+              <Button variant="outline" className="w-max">
                 {`Schedule An Appointment With ${first_name}`}
               </Button>
               {coach.custom_button && (

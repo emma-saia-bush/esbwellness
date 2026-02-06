@@ -26,13 +26,18 @@ export function Coaches() {
           <div className="flex flex-col gap-2 max-w-lg">
             <Text
               variant="title"
-              className="text-3xl"
+              className="text-3xl text-center md:text-left"
               weight="bold"
               font="serif"
             >
               {coach.name}
             </Text>
-            <Text variant="subtitle" font="serif" fontStyle="italic">
+            <Text
+              variant="subtitle"
+              font="serif"
+              fontStyle="italic"
+              className="text-center md:text-left"
+            >
               {coach.title}
             </Text>
             <Text variant="body">{coach.short_bio}</Text>

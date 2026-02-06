@@ -57,7 +57,7 @@ export function Navbar() {
               <DropdownMenuItem>
                 <Link href="/about">
                   <Text variant="body" font="serif">
-                    About Your Coaches
+                    Your Coaches
                   </Text>
                 </Link>
               </DropdownMenuItem>
