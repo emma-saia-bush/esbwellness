@@ -11,29 +11,34 @@ export function Footer() {
           <Text variant="caption" font="sans" colorStyle="light">
             Phone
           </Text>
-          <Text
-            variant="body"
-            font="serif"
-            fontStyle="italic"
-            colorStyle="light"
-            className="pt-0"
-          >
-            (512)-900-0995
-          </Text>
+          <a href="tel:+15129000995">
+            <Text
+              variant="body"
+              font="serif"
+              fontStyle="italic"
+              colorStyle="light"
+              className="pt-0"
+            >
+              (512)-900-0995
+            </Text>
+          </a>
         </div>
         <div className="flex flex-col gap-1">
           <Text variant="caption" font="sans" colorStyle="light">
             Email
           </Text>
-          <Text
-            variant="body"
-            font="serif"
-            fontStyle="italic"
-            colorStyle="light"
-            className="pt-0"
-          >
-            esbwellnesscenter@gmail.com
-          </Text>
+
+          <a href="mailto:esbwellnesscenter@gmail.com">
+            <Text
+              variant="body"
+              font="serif"
+              fontStyle="italic"
+              colorStyle="light"
+              className="pt-0"
+            >
+              esbwellnesscenter@gmail.com
+            </Text>
+          </a>
         </div>
       </div>
     </footer>
