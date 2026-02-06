@@ -39,15 +39,15 @@ export function Offer() {
         <Separator />
         <div className="flex flex-col gap-4">
           <Text variant="body" font="serif" fontStyle="italic">
-            Lorem ipsum dolor sit amet, consectetur adipiscing
+            Individualized wellness guidance for your body and lifestyle
           </Text>
           <Text variant="smalltitle" font="serif">
             Wellness Community Subscription
           </Text>
           <Text variant="body" className="pt-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-            perspiciatis unde omnis iste natus error sit voluptatem accusLorem
-            ipsum dolor sit amet, consectetur adipiscing elit.
+            Rad Health & Wellness provides individualized guidance,
+            accountability, and support designed for your body and your season
+            of life.
           </Text>
           <div>
             <ExternalLink href="https://rad-health-wellness.circle.so">
