@@ -15,7 +15,7 @@ export function Pricing() {
               <Text variant="title" font="serif" weight="bold">
                 Services & Pricing
               </Text>
-              <Text variant="largebody" className="text-center px-16">
+              <Text variant="largebody" className="text-center md:px-16">
                 We offer one-on-one coaching sessions with our clients that
                 allow us to hear their stories and identify their key needs so
                 we can hand-craft a protocol that fits into their lives
@@ -27,7 +27,7 @@ export function Pricing() {
                 <Text font="serif" className="text-center text-8xl">
                   {consultation_price}
                 </Text>
-                <Text className="text-center px-12" font="serif">
+                <Text className="text-center md:px-12" font="serif">
                   Your first session is a 50-minute consultation where we review
                   your health history, goals, and current concerns.
                 </Text>
@@ -39,7 +39,7 @@ export function Pricing() {
                 <Text font="serif" className="text-center text-8xl">
                   {regular_price}
                 </Text>
-                <Text className="text-center px-12" font="serif">
+                <Text className="text-center md:px-12" font="serif">
                   Ongoing one-hour sessions focused on continued support,
                   progress, and personalized adjustments to your plan.
                 </Text>

@@ -6,34 +6,38 @@ import { useRouter } from "next/navigation";
 export function Hero() {
   const router = useRouter();
   return (
-    <div className="relative px-12 flex min-h-[70vh]">
+    <div className="relative px-12 flex min-h-[85vh] md:min-h-[70vh]">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('/hero-background.jpg')",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/65 to-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50" />
 
       <div className="relative flex flex-col w-full justify-end items-center gap-6 md:gap-10 pb-4">
         <div className="flex flex-col md:flex-row">
-          <div className="flex flex-col gap-4 flex-2">
+          <div className="flex flex-col gap-2 md:gap-4 flex-2">
             <Text
-              variant="title"
               font="serif"
               fontStyle="italic"
               colorStyle="light"
+              className="text-2xl md:text-4xl"
             >
               Gentle nourishment and lasting healing for your mind, body, and
               soul
             </Text>
-            <Text variant="subtitle" colorStyle="light">
+            <Text
+              variant="subtitle"
+              colorStyle="light"
+              className="text-md md:text-xl"
+            >
               You’re safe to share your symptoms, fears, and struggles here
               without being overlooked or invalidated
             </Text>
           </div>
 
-          <div className="flex flex-1 mt-6 md:mt-0 justify-end md:items-end">
+          <div className="flex flex-1 mt-6 md:mt-0 justify-center md:justify-end md:items-end">
             <Button
               variant="outlinelight"
               size="lg"
@@ -42,7 +46,7 @@ export function Hero() {
                 router.push("/contact");
               }}
             >
-              Get In Touch
+              Schedule an appointment
             </Button>
           </div>
         </div>
