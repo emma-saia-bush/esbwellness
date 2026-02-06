@@ -14,7 +14,7 @@ export function Intro() {
           </Text>
           <Text variant="largebody">
             We help women support hormone health through holistic nutrition,
-            functional fitness, and sustainable lifestyle habits.We support you
+            functional fitness, and sustainable lifestyle habits. We support you
             in feeling strong, energized, and balanced before, during, and after
             pregnancy
           </Text>
