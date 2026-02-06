@@ -1,6 +1,9 @@
+"use client";
 import { Button, Text } from "@/components/ui";
 import { coaches } from "@/lib/custom";
+import { useRouter } from "next/navigation";
 export function Coaches() {
+  const router = useRouter();
   return (
     <div className="flex flex-col items-center justify-center bg-background-accent-dark gap-8 p-10">
       <div className="flex flex-col items-center justify-center gap-4">
@@ -42,7 +45,13 @@ export function Coaches() {
             </Text>
             <Text variant="body">{coach.short_bio}</Text>
             <div>
-              <Button variant="link" className="pl-0">
+              <Button
+                variant="link"
+                className="pl-0"
+                onClick={() => {
+                  router.push(`/about#${coach.section_name}`);
+                }}
+              >
                 Learn More
               </Button>
             </div>

@@ -7,6 +7,7 @@ import {
   DropdownMenuContent,
   DropdownMenuLabel,
   DropdownMenuItem,
+  Button,
 } from "@/components/ui";
 import { Menu } from "lucide-react";
 import { ContactButton } from "./contact-button";
@@ -15,6 +16,7 @@ import { useRouter } from "next/navigation";
 
 export function Navbar() {
   const router = useRouter();
+
   return (
     <header>
       <div className="flex justify-between itmes-center p-4 px-6 bg-background-dark">
@@ -34,7 +36,7 @@ export function Navbar() {
             <DropdownMenuTrigger>
               <Menu className="text-foreground-light" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="p-4">
+            <DropdownMenuContent className="p-6">
               <DropdownMenuLabel>Quick Actions</DropdownMenuLabel>
               <DropdownMenuItem
                 onClick={() => {
@@ -57,14 +59,7 @@ export function Navbar() {
               <DropdownMenuItem>
                 <Link href="/about">
                   <Text variant="body" font="serif">
-                    Your Coaches
-                  </Text>
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link href="/#pricing">
-                  <Text variant="body" font="serif">
-                    Pricing
+                    About Your Coaches
                   </Text>
                 </Link>
               </DropdownMenuItem>
