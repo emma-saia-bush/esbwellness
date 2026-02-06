@@ -14,12 +14,12 @@ export function AboutSection({ coach }: AboutSectionType) {
     <section id={coach.section_name} key={coach.section_name}>
       <div className="bg-background-accent-dark">
         <PagePaddingWrapper>
-          <div className="flex flex-col gap-7">
-            <div className="flex justify-between">
+          <div className="flex flex-col gap-3 md:gap-7">
+            <div className="flex flex-col md:flex-row md:justify-between">
               <Text variant="smalltitle" font="serif">
                 About {first_name}
               </Text>
-              <Button variant="link">View Certificates</Button>
+              <Button variant="link" className="w-max px-0">View Certificates</Button>
             </div>
             <div>
               <Separator />
