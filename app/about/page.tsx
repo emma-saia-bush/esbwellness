@@ -1,5 +1,5 @@
 import { AboutSection, AboutHero } from "@/components/layout";
-import { coaches } from "@/lib/custom";
+import { coaches } from "@/lib/coaches";
 
 export default function Home() {
   return (

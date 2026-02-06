@@ -1,7 +1,7 @@
 "use client";
 import { PagePaddingWrapper } from "@/components/layout";
 import { Button, Text } from "@/components/ui";
-import { coaches } from "@/lib/custom";
+import { coaches } from "@/lib/coaches";
 import { useRouter } from "next/navigation";
 
 export default function Home() {

@@ -1,7 +1,7 @@
 "use server";
 
 import { transporter } from "@/lib/mail/transporter";
-import { dark_email_color, light_email_color } from "../custom";
+import { dark_email_color, light_email_color } from "../coaches";
 
 // !! UPDATE EMAILS
 

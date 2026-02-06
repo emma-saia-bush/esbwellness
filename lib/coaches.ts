@@ -26,7 +26,7 @@ export const coaches: CoachInfo[] = [
     name: "Emma Bush",
     section_name: "emma",
     title:
-      "Business Owner | Nutrition and Wellness | Gut and Hormone Health Coach",
+      "Business Owner | Nutrition and Wellness, Gut and Hormone Health Coach",
     picture_url:
       "https://bjwlzqryc3kj3ybt.public.blob.vercel-storage.com/coaches/emma/profile.png",
     short_bio:

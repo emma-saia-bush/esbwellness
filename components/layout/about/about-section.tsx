@@ -2,7 +2,7 @@
 
 import { Button, Separator, Text } from "@/components/ui";
 import { PagePaddingWrapper } from "../helpers/page-padding-wrapper";
-import { CoachInfo } from "@/lib/custom";
+import { CoachInfo } from "@/lib/coaches";
 import { useRouter } from "next/navigation";
 
 type AboutSectionType = {

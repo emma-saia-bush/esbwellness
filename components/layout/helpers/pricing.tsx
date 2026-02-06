@@ -3,7 +3,7 @@
 import { Separator, Text } from "@/components/ui";
 
 import { PagePaddingWrapper } from "./page-padding-wrapper";
-import { consultation_price, regular_price } from "@/lib/custom";
+import { consultation_price, regular_price } from "@/lib/coaches";
 
 export function Pricing() {
   return (
@@ -12,7 +12,12 @@ export function Pricing() {
         <PagePaddingWrapper>
           <div className="flex flex-col items-center gap-10">
             <div className="flex flex-col items-center gap-5">
-              <Text variant="title" font="serif" weight="bold" className="text-center">
+              <Text
+                variant="title"
+                font="serif"
+                weight="bold"
+                className="text-center"
+              >
                 Services & Pricing
               </Text>
               <Text variant="largebody" className="text-center md:px-16">

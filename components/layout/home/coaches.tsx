@@ -1,16 +1,22 @@
 "use client";
 import { Button, Text } from "@/components/ui";
-import { coaches } from "@/lib/custom";
+import { coaches } from "@/lib/coaches";
 import { useRouter } from "next/navigation";
 export function Coaches() {
   const router = useRouter();
   return (
     <div className="flex flex-col items-center justify-center bg-background-accent-dark gap-8 p-10">
       <div className="flex flex-col items-center justify-center gap-4">
-        <Text variant="title" font="serif" fontStyle="italic" weight="bold">
+        <Text
+          variant="title"
+          font="serif"
+          fontStyle="italic"
+          weight="bold"
+          className="text-center"
+        >
           Meet Your Coaches
         </Text>
-        <Text variant="largebody" font="serif">
+        <Text variant="largebody" font="serif" className="text-center">
           Different Strengths, One Mission: Your Health
         </Text>
       </div>
