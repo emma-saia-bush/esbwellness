@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export function Hero() {
   const router = useRouter();
   return (
-    <div className="relative px-12 flex min-h-[85vh] md:min-h-[70vh]">
+    <div className="relative px-12 flex min-h-[70vh]">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{

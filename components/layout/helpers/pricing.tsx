@@ -12,7 +12,7 @@ export function Pricing() {
         <PagePaddingWrapper>
           <div className="flex flex-col items-center gap-10">
             <div className="flex flex-col items-center gap-5">
-              <Text variant="title" font="serif" weight="bold">
+              <Text variant="title" font="serif" weight="bold" className="text-center">
                 Services & Pricing
               </Text>
               <Text variant="largebody" className="text-center md:px-16">

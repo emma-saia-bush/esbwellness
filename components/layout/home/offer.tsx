@@ -9,7 +9,7 @@ export function Offer() {
   return (
     <div className="flex flex-col-reverse w-full h-full justify-center md:flex-row md:items-stretch md:pl-20 md:gap-8">
       <div className="flex-1 flex flex-col gap-8 p-10 md:px-0">
-        <Text variant="title" weight="bold">
+        <Text variant="title" weight="bold" className="text-center">
           What We Offer
         </Text>
         <div className="flex flex-col gap-4">
