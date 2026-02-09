@@ -67,6 +67,12 @@ export const coaches: CoachInfo[] = [
       "Along the way, I navigated my own gut health challenges and was often met with “one-size-fits-all” nutrition protocols. Spoiler alert: they didn’t work. What did work was learning how to support my body with individualized care, targeted nourishment, and patience—allowing me to heal, optimize my health, and feel truly well.",
       "Today, I aim to be the bridge between your health questions and the answers that never quite seem to fit. We are all wonderfully unique, and your care should reflect that. One size does not fit all—and your health deserves more than that.",
     ],
+    certifications: [
+      {
+        name: "Functional Nutrition Counselor",
+        link: "https://bjwlzqryc3kj3ybt.public.blob.vercel-storage.com/coaches/rachel/Certification1.pdf"
+      },
+    ],
     custom_button: {
       title: "Join Rachels RAD Wellness Community",
       link: "https://rad-health-wellness.circle.so",
