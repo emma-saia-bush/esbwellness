@@ -70,7 +70,11 @@ export const coaches: CoachInfo[] = [
     certifications: [
       {
         name: "Functional Nutrition Counselor",
-        link: "https://bjwlzqryc3kj3ybt.public.blob.vercel-storage.com/coaches/rachel/Certification1.pdf"
+        link: "https://bjwlzqryc3kj3ybt.public.blob.vercel-storage.com/coaches/rachel/Certification1.pdf",
+      },
+      {
+        name: "Certified Personal Trainer",
+        link: "https://bjwlzqryc3kj3ybt.public.blob.vercel-storage.com/coaches/rachel/Certification2.pdf",
       },
     ],
     custom_button: {
