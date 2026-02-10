@@ -20,7 +20,7 @@ export function CoachCard({ coach }: CoachCardProps) {
         />
       </div>
 
-      <div className="flex flex-col gap-2 md:gap-5 flex-1 p-0 md:px-10">
+      <div className="flex flex-col gap-2 items-center md:gap-5 flex-1 p-0 md:px-15">
         <Text variant="subtitle" font="serif">
           {coach.name} — {coach.title}
         </Text>
@@ -30,7 +30,7 @@ export function CoachCard({ coach }: CoachCardProps) {
         </Text>
         <Button
           variant="outline"
-          className="w-full"
+          className="w-full md:w-max"
           onClick={() => router.push(`/schedule/${coach.calendarly_link}`)}
         >
           Schedule and appointment with {coach.name.split(" ")[0]}

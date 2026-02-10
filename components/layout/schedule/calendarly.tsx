@@ -18,10 +18,11 @@ export function Calendarly({ url }: CalendarlyProps) {
     };
   }, []);
 
+  // !! include privacy policy
   return (
     <div
       className="calendly-inline-widget"
-      data-url={`https://calendly.com/${url}?text_color=243845&primary_color=243845`}
+      data-url={`https://calendly.com/${url}?hide_gdpr_banner=1&text_color=243845&primary_color=243845`}
       style={{ minWidth: "320px", height: "700px" }}
     />
   );
