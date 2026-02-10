@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <PagePaddingWrapper>
-      <div className="flex flex-col items-center mx-auto gap-5 max-w-2xl bg-green-200">
+      <div className="flex flex-col items-center mx-auto gap-5">
         <Text variant="smalltitle" font="serif" fontStyle="italic">
           Ready to Schedule an appointment?
         </Text>
