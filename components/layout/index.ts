@@ -15,3 +15,6 @@ export * from "./home/call-to-action";
 
 export * from "./about/hero";
 export * from "./about/about-section";
+
+export * from "./schedule/calendarly";
+export * from "./schedule/coach-card";

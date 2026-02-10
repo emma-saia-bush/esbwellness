@@ -1,6 +1,7 @@
 "use client";
 import { Button, Text } from "@/components/ui";
 import { coaches } from "@/lib/coaches";
+import { ArrowRightIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 export function Coaches() {
   const router = useRouter();
@@ -32,7 +33,7 @@ export function Coaches() {
               className="w-full h-full object-cover rounded-sm"
             />
           </div>
-          <div className="flex flex-col gap-2 max-w-lg">
+          <div className="flex flex-col gap-3 max-w-lg">
             <Text
               variant="title"
               className="text-3xl"
@@ -44,8 +45,20 @@ export function Coaches() {
             <Text variant="subtitle" font="serif" fontStyle="italic">
               {coach.title}
             </Text>
-            <Text variant="body">{coach.short_bio}</Text>
-            <div>
+            <Text variant="body" className="p-0">
+              {coach.short_bio}
+            </Text>
+            <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between md:gap-0">
+              <Button
+                className="w-full md:w-max"
+                variant="outline"
+                size="sm"
+                onClick={() => {
+                  router.push(`/schedule/${coach.calendarly_link}`);
+                }}
+              >
+                Schedule an appointment with {coach.name.split(" ")[0]}
+              </Button>
               <Button
                 variant="link"
                 className="pl-0"
@@ -53,7 +66,7 @@ export function Coaches() {
                   router.push(`/about#${coach.section_name}`);
                 }}
               >
-                Learn More
+                Read Full Bio <ArrowRightIcon />
               </Button>
             </div>
           </div>

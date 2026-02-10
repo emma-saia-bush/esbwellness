@@ -43,7 +43,7 @@ export function Hero() {
               size="lg"
               className="min-w-[200px]"
               onClick={() => {
-                router.push("/contact");
+                router.push("/schedule");
               }}
             >
               Schedule an appointment

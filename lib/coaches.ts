@@ -7,9 +7,11 @@ type certType = {
   name: string;
   link: string;
 };
+
 export type CoachInfo = {
   name: string;
   section_name: string;
+  calendarly_link: string;
   title: string;
   picture_url: string;
   short_bio: string;
@@ -25,6 +27,7 @@ export const coaches: CoachInfo[] = [
   {
     name: "Emma Bush",
     section_name: "emma",
+    calendarly_link: "emmasaiabush",
     title:
       "Business Owner | Nutrition and Wellness, Gut and Hormone Health Coach",
     picture_url:
@@ -33,7 +36,7 @@ export const coaches: CoachInfo[] = [
       "Emma helps women restore balance and confidence through gut and hormone health support. After overcoming Stage 4 endometriosis through holistic lifestyle changes, she is passionate about helping women heal naturally and live toxin-free.",
     bio: [
       "Hi, I’m Emma! I am so excited to help you on your personal journey to Gut & Hormone success! I’m passionate about helping others live a non-toxic lifestyle because it is what saved me from years of undiagnosed pain.",
-      "I trained throughout my youth as a competitive runner, eventually earning me a spot at Texas A&M. Over time, the level at which I trained and competed started causing my body to shut down. I was diagnosed with Stage 4 endometriosis and was in and out of hospitals for debilitating pain, cysts, and fertility issues. Endometriosis is a highly understudied disorder, and medical professionals were unable to get to the root of my problem. Instead of supplying me with what I truly needed, they continued to give me the same advice they give every woman: birth control and surgery. Neither option felt right for my body at the time, and I knew it was time to look for other solutions.",
+      "I trained throughout my youth as a competitive runner, eventually earning me a spot at Texas A&M. Over time, the level at which I trained and competed started causing my body to shut down. I was diagnosed with Stage 4 endometriosis and was in and out of hospitals for debilitating pain, cysts, and fertility issues. Endometriosis is a highly understudied disorder, and medical professionals were unable to get to the root of my problem. Instead of supplying me with what I truly needed, they continued to give me the same advice they give every woman: birth control and surgery. Neither option felt right for my body at the time, and I knew there was an underlying issue.",
       "As women, it can be discouraging to feel so lost when it comes to your body, especially your reproductive system. But I refused to give up. I knew there was a community for people like me, people who saw the studies on the effects of these birth controls and procedures and noticed the endometriosis cycle continued to appear again and again, sometimes worse than before. I surrounded myself with a community that shared my struggle, my pain, and began to educate myself on alternative options. The answer I needed became clear – balanced hormones, nourishing food, and a toxin-free lifestyle.",
       "By learning to live in alignment with my cycle, changing my diet, removing hidden toxins, and supporting my body holistically, I began to heal. It took years of work and dedication to see the goals I had for myself through, but I can now say I am no longer afraid and on a never-ending upward climb to freedom from my endometriosis symptoms. I continued my education, becoming a certified Gut & Hormone Health Professional, and used what I learned not only for my own body, but also for other women who needed the tools to be their healthiest selves again.",
       "I am proof that a non-toxic lifestyle change can and will make a difference in your overall health. Through educating myself and my faith that God would continue to guide me, I was saved from the non-stop pain and burden I carried for 4 years. The journey wasn’t easy, but I came out on the other side with energy, confidence, and a new lease on life. If I can give one thing to those around me in this life, it would be freedom from the pain and suffering our bodies endure. Your body is capable of healing as mine did, and I’m so excited to help you get there!",
@@ -48,7 +51,7 @@ export const coaches: CoachInfo[] = [
         link: "https://bjwlzqryc3kj3ybt.public.blob.vercel-storage.com/coaches/emma/certification2.png",
       },
       {
-        name: "Health Coach Training",
+        name: "Holistic Health Coach",
         link: "https://bjwlzqryc3kj3ybt.public.blob.vercel-storage.com/coaches/emma/certification3.png",
       },
     ],
@@ -56,6 +59,7 @@ export const coaches: CoachInfo[] = [
   {
     name: "Rachel de Jong",
     section_name: "rachel",
+    calendarly_link: "radwellnesscenter",
     title: "Functional Nutrition Counselor | Fitness Professional",
     picture_url:
       "https://bjwlzqryc3kj3ybt.public.blob.vercel-storage.com/coaches/rachel/profile.png",

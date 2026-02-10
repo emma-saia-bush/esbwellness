@@ -21,7 +21,10 @@ export default function Contact() {
           <ContactForm />
           <Text className="text-foreground/70">
             {`Interested in our pricing? Check it out `}
-            <Link href="/#pricing" className="underline">here</Link>.
+            <Link href="/#pricing" className="underline">
+              here
+            </Link>
+            .
           </Text>
         </div>
       </PagePaddingWrapper>
