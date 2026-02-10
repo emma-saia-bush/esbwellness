@@ -6,17 +6,21 @@ export default function Contact() {
   return (
     <div>
       <PagePaddingWrapper>
-        <div className="flex flex-col gap-4 items-center">
+        <div className="flex flex-col gap-2 items-center">
           <Text variant="smalltitle" font="serif">
             Contact Us
           </Text>
-          <Text
-            variant="largebody"
-            font="serif"
-            className="max-w-lg text-center"
-          >
-            Ready to get started or need more information? Send us a message and
-            we’ll be in touch soon.
+          <Text font="serif" variant="largebody">
+            For general questions, please use the form below
+          </Text>
+          <Text className="max-w-3xl text-center p-0 text-foreground/70">
+            If you’re ready to schedule an appointment,{" "}
+            <Link
+              href="/schedule"
+              className="underline font-semibold hover:opacity-80"
+            >
+              you can book time here
+            </Link>
           </Text>
           <ContactForm />
           <Text className="text-foreground/70">
