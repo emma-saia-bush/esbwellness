@@ -1,44 +1,74 @@
-import { Text } from "@/components/ui";
+"use client";
+import { Button, Separator, Text } from "@/components/ui";
+import { useRouter } from "next/navigation";
 
 export function Footer() {
+  const router = useRouter();
   return (
     <footer className="p-10 bg-background-dark">
-      <div className="flex flex-col gap-8 md:flex-row items-start md:items-center justify-start md:justify-evenly">
-        <Text variant="subtitle" font="serif" colorStyle="light">
-          ESB Wellness
-        </Text>
-        <div className="flex flex-col gap-1">
-          <Text variant="caption" font="sans" colorStyle="light">
-            Phone
-          </Text>
-          <a href="tel:+15129000995">
-            <Text
-              variant="body"
-              font="serif"
-              fontStyle="italic"
-              colorStyle="light"
-              className="pt-0"
-            >
-              (512)-900-0995
+      <div className="max-w-5xl mx-auto">
+        <div className="flex flex-col items-start gap-5">
+          <div className="flex w-full flex-col gap-8 md:flex-row items-start md:items-center justify-start md:justify-between">
+            <Text variant="subtitle" font="serif" colorStyle="light">
+              ESB Wellness
             </Text>
-          </a>
-        </div>
-        <div className="flex flex-col gap-1">
-          <Text variant="caption" font="sans" colorStyle="light">
-            Email
-          </Text>
+            <div className="flex flex-col gap-1">
+              <Text variant="caption" font="sans" colorStyle="light">
+                Phone
+              </Text>
+              <a href="tel:+15129000995">
+                <Text
+                  variant="body"
+                  font="serif"
+                  fontStyle="italic"
+                  colorStyle="light"
+                  className="pt-0"
+                >
+                  (512)-900-0995
+                </Text>
+              </a>
+            </div>
+            <div className="flex flex-col gap-1">
+              <Text variant="caption" font="sans" colorStyle="light">
+                Email
+              </Text>
 
-          <a href="mailto:esbwellnesscenter@gmail.com">
-            <Text
-              variant="body"
-              font="serif"
-              fontStyle="italic"
-              colorStyle="light"
-              className="pt-0"
+              <a href="mailto:esbwellnesscenter@gmail.com">
+                <Text
+                  variant="body"
+                  font="serif"
+                  fontStyle="italic"
+                  colorStyle="light"
+                  className="pt-0"
+                >
+                  esbwellnesscenter@gmail.com
+                </Text>
+              </a>
+            </div>
+          </div>
+          {/* <div className="w-full md:hidden">
+            <Separator light className="w-full md:hidden"/>
+          </div> */}
+          <div className="flex flex-row gap-4 md:gap-10">
+            <Button
+              variant="linklight"
+              className="px-0"
+              onClick={() => {
+                router.push("/privacy");
+              }}
             >
-              esbwellnesscenter@gmail.com
-            </Text>
-          </a>
+              Privacy Policy
+            </Button>
+            <Button
+              variant="linklight"
+              className="px-0"
+              onClick={() => {
+                router.push("/terms");
+              }}
+            >
+              Terms of Use
+            </Button>
+          </div>
         </div>
       </div>
     </footer>
