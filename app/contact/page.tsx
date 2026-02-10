@@ -15,18 +15,15 @@ export default function Contact() {
           </Text>
           <Text className="text-center p-0 text-foreground/70">
             Ready to schedule an appointment?{" "}
-            <Link
-              href="/schedule"
-              className="underline font-semibold hover:opacity-80"
-            >
+            <Link href="/schedule" className="underline">
               Book time here
             </Link>
           </Text>
           <ContactForm />
           <Text className="text-foreground/70">
-            {`Interested in our pricing? Check it out `}
+            {`Interested in our pricing? `}
             <Link href="/#pricing" className="underline">
-              here
+              View here
             </Link>
             .
           </Text>
