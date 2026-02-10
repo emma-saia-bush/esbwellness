@@ -11,7 +11,7 @@ interface CoachCardProps {
 export function CoachCard({ coach }: CoachCardProps) {
   const router = useRouter();
   return (
-    <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 p-4 border shadow-md">
+    <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-0 p-4 border shadow-md">
       <div className="flex-shrink-1 md:min-h-64 md:max-h-64 md:aspect-square">
         <img
           src={coach.picture_url}
@@ -20,7 +20,7 @@ export function CoachCard({ coach }: CoachCardProps) {
         />
       </div>
 
-      <div className="flex flex-col gap-2 items-center md:gap-5 flex-1 p-0 md:px-15">
+      <div className="flex flex-col gap-2 items-center gap-3 flex-1 md:px-6">
         <Text variant="subtitle" font="serif">
           {coach.name} — {coach.title}
         </Text>
