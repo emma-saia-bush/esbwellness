@@ -10,16 +10,16 @@ export default function Contact() {
           <Text variant="smalltitle" font="serif">
             Contact Us
           </Text>
-          <Text font="serif" variant="largebody">
+          <Text font="serif" variant="largebody" className="text-center">
             For general questions, please use the form below
           </Text>
-          <Text className="max-w-3xl text-center p-0 text-foreground/70">
-            If you’re ready to schedule an appointment,{" "}
+          <Text className="text-center p-0 text-foreground/70">
+            Ready to schedule an appointment?{" "}
             <Link
               href="/schedule"
               className="underline font-semibold hover:opacity-80"
             >
-              you can book time here
+              Book time here
             </Link>
           </Text>
           <ContactForm />
