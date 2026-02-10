@@ -9,8 +9,8 @@ export function Intro() {
         </div>
         <div className="flex flex-col gap-2 pt-2 pb-3">
           <Text className="text-2xl leading-tight" font="serif" weight="bold">
-            It’s possible to have healthy cycles, wholesome nutrition, and
-            balanced hormones for women in every season.
+            Healthy cycles, wholesome nutrition, and balanced hormones are
+            possible in every season of life
           </Text>
           <Text variant="largebody">
             We help women support hormone health through holistic nutrition,
